@@ -1,0 +1,149 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  background-color: #f0f0f0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+nav ul {
+  list-style-type: none;
+  /* padding: 0; */
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Basic CSS for the form elements */
+body {
+  font-family: Arial, sans-serif;
+  /* margin: 20px; */
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 200px;
+  padding: 5px;
+}
+
+button {
+  padding: 7px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Basic CSS for the report section */
+h2 {
+  margin-top: 30px;
+}
+
+#report,#result {
+  padding: 10px;
+  max-width: 400px;
+  word-wrap: break-word;
+}
+#result{
+height: 400px;
+width: 500px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+flex-direction: column;
+}
+#result img{
+  width: 200px;
+  height: 100px;
+}
+
+/* Hide the radio input */
+input[type="radio"] {
+  display: none;
+}
+
+/* Style the radio button labels */
+.radio-label {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+  border: 2px solid #ddd;
+}
+
+/* Male specific styling */
+.radio-label.male {
+  background-color: #2196F3;
+  color: white;
+}
+
+/* Female specific styling */
+.radio-label.female {
+  background-color: #E91E63;
+  color: white;
+}
+
+/* Hover effect */
+.radio-label:hover {
+  background-color: #555;
+  color: white;
+}
+
+/* Checked state */
+input[type="radio"]:checked + .radio-label {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+  color: white;
+}
+
+/* Style the report section */
+#report {
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: white;
+  font-size: 1.2em;
+  transition: all 0.5s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Show animation */
+#report.show {
+  opacity: 1;
+  transform: translateY(0);
+}

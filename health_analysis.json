@@ -1,0 +1,8 @@
+{
+  "conditions": [
+    {
+      "name": "bloodpreasure",
+      "imagesrc": "bloodpreasure.png"
+    }
+  ]
+}
